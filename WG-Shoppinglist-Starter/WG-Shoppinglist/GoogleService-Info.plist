@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>495607822291-m2l512flcjcpesder9o1cqoelrj41pd5.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.495607822291-m2l512flcjcpesder9o1cqoelrj41pd5</string>
+	<key>API_KEY</key>
+	<string>AIzaSyC2dYL4aQpocfNGarIyMgNf_3E8lVRDGaU</string>
+	<key>GCM_SENDER_ID</key>
+	<string>495607822291</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>christian.schneeweiss</string>
+	<key>PROJECT_ID</key>
+	<string>wg-einkaufsliste-496e7</string>
+	<key>STORAGE_BUCKET</key>
+	<string>wg-einkaufsliste-496e7.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:495607822291:ios:790df218c8be385c</string>
+	<key>DATABASE_URL</key>
+	<string>https://wg-einkaufsliste-496e7.firebaseio.com</string>
+</dict>
+</plist>

@@ -1,0 +1,443 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4E01E11F22B5436A00594B65 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E01E11E22B5436A00594B65 /* AppDelegate.swift */; };
+		4E01E12122B5436A00594B65 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E01E12022B5436A00594B65 /* ViewController.swift */; };
+		4E01E12622B5436B00594B65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E01E12522B5436B00594B65 /* Assets.xcassets */; };
+		4E01E12922B5436B00594B65 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E01E12722B5436B00594B65 /* LaunchScreen.storyboard */; };
+		4E01E13222B543A300594B65 /* GroceryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E01E13122B543A300594B65 /* GroceryItem.swift */; };
+		4E01E13422B543B600594B65 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E01E13322B543B600594B65 /* User.swift */; };
+		4E01E13722B543D100594B65 /* GroceryListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E01E13622B543D100594B65 /* GroceryListTableViewController.swift */; };
+		4E01E13922B543E300594B65 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E01E13822B543E300594B65 /* LoginViewController.swift */; };
+		4E01E13B22B543FE00594B65 /* OnlineUsersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E01E13A22B543FE00594B65 /* OnlineUsersTableViewController.swift */; };
+		4E01E13D22B5443200594B65 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E01E13C22B5443200594B65 /* Main.storyboard */; };
+		4E01E13F22B5478E00594B65 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4E01E13E22B5478E00594B65 /* GoogleService-Info.plist */; };
+		9F6ADD294C3CA02C064AF8E0 /* Pods_WG_Shoppinglist.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6982DA63E0E883BF108705A0 /* Pods_WG_Shoppinglist.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		00D70D161B59483989D07403 /* Pods-WG-Shoppinglist.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WG-Shoppinglist.debug.xcconfig"; path = "Target Support Files/Pods-WG-Shoppinglist/Pods-WG-Shoppinglist.debug.xcconfig"; sourceTree = "<group>"; };
+		4E01E11B22B5436A00594B65 /* WG-Shoppinglist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WG-Shoppinglist.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E01E11E22B5436A00594B65 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4E01E12022B5436A00594B65 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4E01E12522B5436B00594B65 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4E01E12822B5436B00594B65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4E01E12A22B5436B00594B65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4E01E13122B543A300594B65 /* GroceryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryItem.swift; sourceTree = "<group>"; };
+		4E01E13322B543B600594B65 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		4E01E13622B543D100594B65 /* GroceryListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryListTableViewController.swift; sourceTree = "<group>"; };
+		4E01E13822B543E300594B65 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		4E01E13A22B543FE00594B65 /* OnlineUsersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineUsersTableViewController.swift; sourceTree = "<group>"; };
+		4E01E13C22B5443200594B65 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		4E01E13E22B5478E00594B65 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		6982DA63E0E883BF108705A0 /* Pods_WG_Shoppinglist.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WG_Shoppinglist.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE0ED6BF69C70439E0080CC0 /* Pods-WG-Shoppinglist.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WG-Shoppinglist.release.xcconfig"; path = "Target Support Files/Pods-WG-Shoppinglist/Pods-WG-Shoppinglist.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4E01E11822B5436A00594B65 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F6ADD294C3CA02C064AF8E0 /* Pods_WG_Shoppinglist.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080DA1F2063285E8C3077E87 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6982DA63E0E883BF108705A0 /* Pods_WG_Shoppinglist.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4E01E11222B5436A00594B65 = {
+			isa = PBXGroup;
+			children = (
+				4E01E11D22B5436A00594B65 /* WG-Shoppinglist */,
+				4E01E11C22B5436A00594B65 /* Products */,
+				C5363AAF2869C0FAAFCE333B /* Pods */,
+				080DA1F2063285E8C3077E87 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4E01E11C22B5436A00594B65 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4E01E11B22B5436A00594B65 /* WG-Shoppinglist.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4E01E11D22B5436A00594B65 /* WG-Shoppinglist */ = {
+			isa = PBXGroup;
+			children = (
+				4E01E13522B543C200594B65 /* controllers */,
+				4E01E13022B5439700594B65 /* models */,
+				4E01E11E22B5436A00594B65 /* AppDelegate.swift */,
+				4E01E12022B5436A00594B65 /* ViewController.swift */,
+				4E01E12522B5436B00594B65 /* Assets.xcassets */,
+				4E01E13C22B5443200594B65 /* Main.storyboard */,
+				4E01E12722B5436B00594B65 /* LaunchScreen.storyboard */,
+				4E01E12A22B5436B00594B65 /* Info.plist */,
+				4E01E13E22B5478E00594B65 /* GoogleService-Info.plist */,
+			);
+			path = "WG-Shoppinglist";
+			sourceTree = "<group>";
+		};
+		4E01E13022B5439700594B65 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				4E01E13122B543A300594B65 /* GroceryItem.swift */,
+				4E01E13322B543B600594B65 /* User.swift */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		4E01E13522B543C200594B65 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4E01E13622B543D100594B65 /* GroceryListTableViewController.swift */,
+				4E01E13822B543E300594B65 /* LoginViewController.swift */,
+				4E01E13A22B543FE00594B65 /* OnlineUsersTableViewController.swift */,
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
+		C5363AAF2869C0FAAFCE333B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				00D70D161B59483989D07403 /* Pods-WG-Shoppinglist.debug.xcconfig */,
+				CE0ED6BF69C70439E0080CC0 /* Pods-WG-Shoppinglist.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4E01E11A22B5436A00594B65 /* WG-Shoppinglist */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4E01E12D22B5436B00594B65 /* Build configuration list for PBXNativeTarget "WG-Shoppinglist" */;
+			buildPhases = (
+				82F104CC992829269863351C /* [CP] Check Pods Manifest.lock */,
+				4E01E11722B5436A00594B65 /* Sources */,
+				4E01E11822B5436A00594B65 /* Frameworks */,
+				4E01E11922B5436A00594B65 /* Resources */,
+				2B94CB7716BA429C4801DB33 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WG-Shoppinglist";
+			productName = "WG-Shoppinglist";
+			productReference = 4E01E11B22B5436A00594B65 /* WG-Shoppinglist.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4E01E11322B5436A00594B65 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Christian Schneeweiss";
+				TargetAttributes = {
+					4E01E11A22B5436A00594B65 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 4E01E11622B5436A00594B65 /* Build configuration list for PBXProject "WG-Shoppinglist" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4E01E11222B5436A00594B65;
+			productRefGroup = 4E01E11C22B5436A00594B65 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4E01E11A22B5436A00594B65 /* WG-Shoppinglist */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4E01E11922B5436A00594B65 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E01E13D22B5443200594B65 /* Main.storyboard in Resources */,
+				4E01E13F22B5478E00594B65 /* GoogleService-Info.plist in Resources */,
+				4E01E12922B5436B00594B65 /* LaunchScreen.storyboard in Resources */,
+				4E01E12622B5436B00594B65 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2B94CB7716BA429C4801DB33 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WG-Shoppinglist/Pods-WG-Shoppinglist-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WG-Shoppinglist/Pods-WG-Shoppinglist-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WG-Shoppinglist/Pods-WG-Shoppinglist-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		82F104CC992829269863351C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WG-Shoppinglist-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4E01E11722B5436A00594B65 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E01E13922B543E300594B65 /* LoginViewController.swift in Sources */,
+				4E01E13422B543B600594B65 /* User.swift in Sources */,
+				4E01E12122B5436A00594B65 /* ViewController.swift in Sources */,
+				4E01E13722B543D100594B65 /* GroceryListTableViewController.swift in Sources */,
+				4E01E13B22B543FE00594B65 /* OnlineUsersTableViewController.swift in Sources */,
+				4E01E13222B543A300594B65 /* GroceryItem.swift in Sources */,
+				4E01E11F22B5436A00594B65 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4E01E12722B5436B00594B65 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4E01E12822B5436B00594B65 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4E01E12B22B5436B00594B65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4E01E12C22B5436B00594B65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4E01E12E22B5436B00594B65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00D70D161B59483989D07403 /* Pods-WG-Shoppinglist.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9V425YGM98;
+				INFOPLIST_FILE = "WG-Shoppinglist/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "at.firebase.workshop.WG-Shoppinglist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4E01E12F22B5436B00594B65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE0ED6BF69C70439E0080CC0 /* Pods-WG-Shoppinglist.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9V425YGM98;
+				INFOPLIST_FILE = "WG-Shoppinglist/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "at.firebase.workshop.WG-Shoppinglist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4E01E11622B5436A00594B65 /* Build configuration list for PBXProject "WG-Shoppinglist" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E01E12B22B5436B00594B65 /* Debug */,
+				4E01E12C22B5436B00594B65 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4E01E12D22B5436B00594B65 /* Build configuration list for PBXNativeTarget "WG-Shoppinglist" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E01E12E22B5436B00594B65 /* Debug */,
+				4E01E12F22B5436B00594B65 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4E01E11322B5436A00594B65 /* Project object */;
+}
