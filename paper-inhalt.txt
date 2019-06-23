@@ -1,0 +1,18 @@
+Abstract ?
+Einleitung
+
+Realtime ?
+Realtime Database
+  Datenstruktur
+  Data transfer - protocol
+Vergleich zu anderen Cloud basierten Datenbanken
+  Performance
+
+Vergleich eigener Server zu Firebase
+  Wieso soll man Firebase verwenden?
+  Performance
+  Aufbau
+  Vorteile
+  Nachteile
+  Skalierbarkeit
+  vielleicht auch finanziell

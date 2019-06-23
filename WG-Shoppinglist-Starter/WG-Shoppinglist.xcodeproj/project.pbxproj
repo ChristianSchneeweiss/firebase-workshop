@@ -17,7 +17,6 @@
 		4E01E13922B543E300594B65 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E01E13822B543E300594B65 /* LoginViewController.swift */; };
 		4E01E13B22B543FE00594B65 /* OnlineUsersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E01E13A22B543FE00594B65 /* OnlineUsersTableViewController.swift */; };
 		4E01E13D22B5443200594B65 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E01E13C22B5443200594B65 /* Main.storyboard */; };
-		4E01E13F22B5478E00594B65 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4E01E13E22B5478E00594B65 /* GoogleService-Info.plist */; };
 		9F6ADD294C3CA02C064AF8E0 /* Pods_WG_Shoppinglist.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6982DA63E0E883BF108705A0 /* Pods_WG_Shoppinglist.framework */; };
 /* End PBXBuildFile section */
 
@@ -35,7 +34,6 @@
 		4E01E13822B543E300594B65 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		4E01E13A22B543FE00594B65 /* OnlineUsersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineUsersTableViewController.swift; sourceTree = "<group>"; };
 		4E01E13C22B5443200594B65 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		4E01E13E22B5478E00594B65 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		6982DA63E0E883BF108705A0 /* Pods_WG_Shoppinglist.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WG_Shoppinglist.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE0ED6BF69C70439E0080CC0 /* Pods-WG-Shoppinglist.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WG-Shoppinglist.release.xcconfig"; path = "Target Support Files/Pods-WG-Shoppinglist/Pods-WG-Shoppinglist.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -89,7 +87,6 @@
 				4E01E13C22B5443200594B65 /* Main.storyboard */,
 				4E01E12722B5436B00594B65 /* LaunchScreen.storyboard */,
 				4E01E12A22B5436B00594B65 /* Info.plist */,
-				4E01E13E22B5478E00594B65 /* GoogleService-Info.plist */,
 			);
 			path = "WG-Shoppinglist";
 			sourceTree = "<group>";
@@ -183,7 +180,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E01E13D22B5443200594B65 /* Main.storyboard in Resources */,
-				4E01E13F22B5478E00594B65 /* GoogleService-Info.plist in Resources */,
 				4E01E12922B5436B00594B65 /* LaunchScreen.storyboard in Resources */,
 				4E01E12622B5436B00594B65 /* Assets.xcassets in Resources */,
 			);

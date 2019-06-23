@@ -16,7 +16,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         #warning("Hier das Code Snippet einfügen (Firebase konfigurieren)")
-        FirebaseApp.configure()
         return true
     }
 }

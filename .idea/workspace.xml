@@ -2,19 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7a1512ca-74ae-41db-9960-773a5a9ebb9d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/firebase-workshop.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/R_User_Library.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/md-assets/firebase-add-plist.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/md-assets/firebase-homescreen.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/md-assets/firebase-inside-projekt.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/md-assets/firebase-ios-config.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/md-assets/firebase-projekt-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/md-assets/firebase-projekt-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/walkthrough.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,20 +11,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/walkthrough.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="FIRST">
-              <first_editor relative-caret-position="254">
-                <caret line="222" column="43" selection-start-line="222" selection-start-column="43" selection-end-line="222" selection-end-column="43" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -118,16 +93,15 @@
       <updated>1560607419171</updated>
       <workItem from="1560607422627" duration="9247000" />
       <workItem from="1560619652576" duration="541000" />
-      <workItem from="1560620229867" duration="3029000" />
+      <workItem from="1560620229867" duration="3449000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12817000" />
+    <option name="totallyTimeSpent" value="13237000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17460318" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -163,7 +137,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/walkthrough.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
+        <state split_layout="SECOND">
           <first_editor relative-caret-position="254">
             <caret line="222" column="43" selection-start-line="222" selection-start-column="43" selection-end-line="222" selection-end-column="43" />
           </first_editor>
