@@ -9,3 +9,82 @@ An event based programming system on the other hand works based on events. An ap
 In Node all I/O operations are asynchronous \cite{chaniotis2015node}. Excluding a few operations like renaming a file. This means the control is immediately returned to the caller and therefore not blocking the application \cite{tilkov2010node}. Therefore the flow of the application is determined by the events in which the application is interested in, each event invokes a handler. This handlers never blocks the application on I/O or network requests \cite{doglio2015pro}.
 
 A web server implemented in Node is capable of serving many users all while running single threaded. This is possible because the main loop only registers to the desired events and never does I/O or business logic processing \cite{tilkov2010node}. The I/O or network request events trigger the actual processing where only a few bytes are written, and as soon as an I/O or network request has to be made, the app asynchronously executes it and immediately returns the control. Therefore, even though a Node application runs single threaded the event-loop is never blocked and is capable of serving many users, all while waiting for I/O \cite{tilkov2010node}.
+
+\subsection{Firebase}
+Firebase offers many different services for mobile apps, web apps and more programming environments \cite{cheng2018build}. Firebase works especially well for mobile developers, who do not want to create their own backend. Some of these services are 
+\begin{itemize}
+    \item Realtime Database
+    
+    This is the most mature database service offered by Firebase. It is a NoSQL key-value store, which pushes updates on the server side down to the clients. This push process happens really fast \cite{FirebaseDoc}. 
+    \item Cloud Firestore
+    
+    This is the second database offering by Firebase. In contrast to the Realtime Database, Cloud Firestore implements a NoSQL document store and allows for more complex queries \cite{FirebaseDoc}.
+    
+    \item Authentication
+    
+    Firebase authentication service allows developers to offer either email and password, or other common authentication processes, like Google and Facebook, for signing in. Developers can then use the premade UI elements or make their own and use the Firebase API for authentication. Either way all users are visible in the Firebase project homepage, excluding the password which is hashed \cite{FirebaseDoc}.
+    
+    \item Cloud Functions
+    
+    Cloud Functions makes Firebase really competitive against custom server solutions. This service allows developers to create functions written in TypeScript, which are triggered by either other Firebase services or HTTP requests \cite{FirebaseDoc}.  For this reason, it is possible to use all Firebase services, all while offering custom functionality.
+\end{itemize}
+
+Firebase offers three different pricing plans.
+\begin{itemize}
+    \item Spark Plan
+    
+    Is the free plan and good starting point, as it is always possible to upgrade later. Offers almost all functionality of Firebase at a limited amount. For example Realtime Database offers 1GB stored with 100 simultaneous connections \cite{FirebasePricing}. Firebase themselve quote them as "Generous limits for hobbyists" \cite{FirebasePricing}.
+    
+    \item Flame Plan
+    
+    Is the fixed pricing plan, costing \$25/month. Increases the limitation up from the Spark Plan, without providing more functionality. The storage limit for Realtime Database goes up to 10GB now, with 100k simultaneous connections \cite{FirebasePricing}.
+    
+    \item Blaze Plan
+    
+    This is the pay-as-you-go pricing plan, while including the free usage from the Spark Plan. Offers nearly unlimited scaling and all available functionality from Firebase. As pay-as-you-go suggests, the customer is only billed for actual resource usage and not for a fixed amount, in contrast to the Flame Plan \cite{FirebasePricing}. This allows customers to be more flexible and help them against the high variance in load, mentioned before. Realtime Database for example costs \$5 per GB/month of storage. 
+\end{itemize}
+
+\subsection{Comparison}
+\subsubsection{Performance}
+Omar Almootassem et al. \cite{almootassem2017cloud} compared Firebase to other NoSQL database system by creating a cloud based service to let users run the test suite and find the database most suited for their application. This cloud based service is built using Node Js. The comparison has two different simulated files, a large one with 200kb and a small one with 5kb. They run each test 30 times to create a sustainable result.
+
+\begin{table}[h!]
+    \centering
+     \begin{tabular}{|m{1cm} m{1.5cm} m{1.5cm} m{1.5cm} m{1.5cm}|} 
+         \hline
+          & MongoDB & DynamoDB & Firebase & CouchDB \\ [0.5ex] 
+         \hline\hline
+         Upload Small Data & 250 & 210 & 70 & 470 \\ 
+         \hline
+         Upload Large Data & 1200 & 680 & 500 & 2800 \\
+         \hline
+         Retrieve Small Data & 160 & 150 & 55 & 366 \\
+         \hline
+         Retrieve Large Data & 740 & 300 & 540 & 700 \\
+         \hline
+         Update Small Data & 250 & 210 & 40 & 520 \\
+         \hline
+         Update Large Data & 1280 & 680 & 380 & 2800 \\
+         \hline
+        \end{tabular}
+    \caption{Average time in ms for each test}
+    \label{tab:perf_avg}
+\end{table}
+
+As seen in the table above \ref{tab:perf_avg} Firebase was the fastest in every test. In their \cite{almootassem2017cloud} test Firebase was the only contender to directly connect to the client, rather than going through the server. For this reason Firebase performed as good as it did. Additionally Firebase remains the connection open while the application is running, therefore it saves time by avoiding the connection phase.
+     
+\subsubsection{Scalability}
+
+Robert Ryan McCune \cite{mccune2011node} performed several tests comparing scalability of Node Js to Apache and EventMachine. The methodology used is testing the ability to handle an incresing amount of concurrent and total requests. This test environment simulates the web of the time of his writing well, as this stresses high concurrency with low data throughput. In his tests Node Js outperformed both Apache and EventMachine. The performance delta increases with higher load on the server and more cores. Because Node Js is single threaded, to scale it across many cores a cluster is needed \cite{NodeCluster}. This works by instantiating the application on any amount of workers, each running in its own process. Additionally all share the same port.
+
+Firebase on the other hand is a cloud based system, where the consumer does not know the underlying data structure, but expects good response times and always on time. Firebase themselves advertise their limits on the Realtime Database, consisting of one single database, of up to 100000 responses per second. Additionally they support up to 100000 simultaneously connected user \cite{FirebaseDoc}. The Blaze pricing plan allows customers to create more Realtime Databases and increase the scalability by sharding between them.
+
+\subsubsection{Advantages and Disadvantages}
+
+Firebase does offer a lot of benefits by providing an easy to API which allows the developer to synchronize their client data to the Firebase database service \cite{khawas2018application}. Additionally, Firebase has SDKs for Android, iOS, JavaScript and other applications \cite{FirebaseDoc}. This allows Firebase to work well on across platforms, because each client always gets the same data no matter the application they are on. 
+
+The customer does not know any server side programming language to create and use a powerful backend. Neither does he have to know about server side deployment, autoscaling and many more considerations that come with the use of a custom backend.
+
+All this comes with the cost of being locked in the Firebase environment and their pricing structure.
+
+Node Js on the other hand, allows the developer to create a backend and choose every little detail about it. This forces the developer to have knowledge in a lot more things, than just client development. Deploying on the server, making sure all dependencies are installed, setting the server up for long running sessions, creating a backup solution.
