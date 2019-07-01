@@ -16,8 +16,7 @@ NoSQL systems are designed for high throughput and high availability. This is on
 \subsubsection{Relational Database as a Service}
 A third party service provides a relational database and manages all maintenance, replication and upgrade options for their users \cite{zhao2013framework}. This frees the customer from buying a server, networking and applying patches to the database software. Two offerings are Amazon Web Services Relational Database System, which opens up MySQL, PostgreSQL and others to the customer. Additionally there are replication, snapshot and performance upgrade available, each costing an additional amount of money. The other is Microsoft SQL Azure \cite{mateljan2010cloud}. By choosing this approach the customer can use all the benefits of relational databases and SQL, like complex queries, joins, ACID properties. While still having the path to scale and replication as a simple option. 
 
-\subsubsection{Virtualized Database Server}
-\cite{zhao2013framework}
+\subsubsection{Virtualized Database Server \cite{zhao2013framework}}
 This approach takes an application which has been designed for use in a data center, and puts it on a virtual server in the public cloud. This is beneficial, because the data base system is now able to control the physical resources. The downside with this is, it is necessary to monitor the system usage and acting accordingly.
 
 
@@ -25,7 +24,7 @@ This approach takes an application which has been designed for use in a data cen
 
 \subsection{Goals}
 
-As said by \cite{sakr2014cloud}. Cloud databases should achieve at least this 4 goals to be successful.
+As said by Sakr \cite{sakr2014cloud}. Cloud databases should achieve at least this 4 goals to be successful.
 \begin{itemize}
     \item Availability
     
@@ -44,10 +43,10 @@ As said by \cite{sakr2014cloud}. Cloud databases should achieve at least this 4 
     The consumer pays only for what they actually use. Therefore the provider reduces costs by keeping their system efficient.
 \end{itemize}
 
-All this goals ???
+All this goals create unprecedented challenges to the developer and provider of cloud hosted database systems. 
 
-\subsection{Challenges}
-Database systems are critical to most applications, for this reason they face a lot of challenges to ensure the goals mentioned before.\cite{sakr2014cloud}
+\subsection{Challenges \cite{sakr2014cloud}}
+Database systems are critical to most applications, for this reason they face a lot of challenges to ensure the goals mentioned before.
 
 \subsubsection{True Elasticity}
 Customers expect cloud hosted services to quickly scale up and down to unpredictable workloads. This creates a challenge for the database system and provider as internet scaled applications can have a high amount of users with a high variance of requests. The demand for services occurs depending on time, day and time of year, as well as popularity of the application. Providers overcome this challenge by having a pay-as-you-go pricing model and on-demand allocation of server resources. Therefore cloud database systems should either allow the customer to allocate more or less resources to their application or have the service dynamically scale up or down, to keep the service responsive.
@@ -65,15 +64,14 @@ The goal of data replication is to increase the availability, scalability and pe
 \end{itemize}
 
 
-\subsubsection{Live Migration}
-\cite{sakr2014cloud}
+\subsubsection{Live Migration \cite{sakr2014cloud}}
 It increases the efficiency and therefore decreases the operation costs of the provider, because it is the process of moving applications between physical machines. This allows the provider to allocate resources to the application it is needed. The two main benefits are
 \begin{itemize}
     \item Performance by moving low demand applications to a low performance system.
     \item Availability by moving applications from systems which are scheduled for maintenance.
 \end{itemize}
 
-Their are two main techniques to migrate \cite{sakr2014cloud}
+Their are two main techniques to migrate \cite{sakr2014cloud}:
 \begin{itemize}
     \item Stop and Copy
     
